@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>oculus-runtime</id>
+    <title>Oculus Runtime for Windows</title>
+    <version>0.4.4</version>
+    <authors>Oculus VR</authors>
+    <owners>Kevin M. Godby</owners>
+    <summary>Oculus Runtime for Windows</summary>
+    <description>Oculus Runtime for Windows</description>
+    <projectUrl>https://developer.oculus.com/</projectUrl>
+    <tags>oculus-runtime</tags>
+    <copyright>2014</copyright>
+    <licenseUrl>https://developer.oculus.com/licenses/license-3.2/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="oculus-runtime.install" version="0.4.4" />
+    </dependencies>
+    <releaseNotes>
+# PC SDK 0.4.4 Beta
+
+December 4, 2014
+
+## New Features
+
+
+* A matching runtime and SDK are now required for development. This does not break backwards compatibility as a newer runtime will work with an older SDK/Integration.
+* Introduced a versioning system for the display driver.
+* High-quality distortion enabled via the `ovrDistortionCap_HqDistortion` flag now applies optimized sub-sampling for better anti-aliasing of high-frequency details visible in the periphery of the eye buffer textures. (Currently only available in D3D11.)
+* Added support for specifying OpenGL version and core profile support. OculusWorldDemo can now be run with core profile support.
+* Enabling of GLE module. This moves the GL extension loading and management to the GLE module, which is somewhat like GLEW. This also allows for automated hooking of all GL functions on platforms (enabled by default on Mac because it doesn’t support `KHR_Debug`). It also centralizes the OpenGL version and extension management to a single place and consistent interface.
+* Added debug functionality to LibOVR to make assertion and crash reporting easier; sample apps and the Config Utility will now display a dialog on crash.
+* Added debug functions to CAPI, to allow real-time debug changing of eye-relief (in the creation of distortion meshes), and real-time debug offsetting of timing information (in generation of timewarp matrices).
+* Simplified the implementation of OculusRoomTiny to more clearly demonstrate rendering setup with D3D11.
+* Updated SDK documentation.
+
+## Bug Fixes
+
+### Oculus SDK
+
+* Returned vignette for both DK1 and DK2. Default to no-vignette to maximize FOV on DK2.
+Fixed an `OVR_Assert` with the `ovrHmd_GetLastError()` function. It was not de-serializing the result which would trigger the `OVR_Assert`.
+* Fixed a bug where we weren’t setting our own framebuffer as the default framebuffer in context creation.
+* Fixed a potential memory leak after a firmware update via the OculusConfigUtil.
+* Fixed shared context creation on Linux.
+* Fixed Linux DK1 device type.
+* Fix for DK1 window unable to target device.
+
+### Unity
+* Fixed a crash when switching from full-screen to windowed mode.
+* Fixed gravity modifier in `OVRPlayerController` prefab. Was 0, which prevented movement.
+* Fixing a bleaching bug with Halo effect.
+* Fixed black screen bug in Unity DX11 build + Extended mode.
+* Added a lock to prevent race conditions between the main &amp; render threads during shutdown.
+* Fix race conditions with OVRManager life cycle management and black screens/crashes associated with scene loading.
+
+### UE4
+* Fixed a crash in Direct Mode ResizeBuffers when the UMD decides to take advantage of multithreaded resource creation.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
