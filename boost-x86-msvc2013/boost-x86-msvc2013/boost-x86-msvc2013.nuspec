@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>boost-x86-msvc2013</id>
+    <title>Boost (MSVC 2013, 32-bit)</title>
+    <version>1.57.0</version>
+    <authors>Boost</authors>
+    <owners>Kevin M. Godby, Ryan A. Pavlik</owners>
+    <summary>Boost provides free peer-reviewed portable C++ source libraries.</summary>
+    <description>Boost provides free peer-reviewed portable C++ source libraries.</description>
+    <projectUrl>http://www.boost.org/</projectUrl>
+    <tags>boost-x86-msvc2013</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.boost.org/LICENSE_1_0.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="boost-x86-msvc2013.install" version="1.57.0" />
+    </dependencies>
+    <releaseNotes>http://www.boost.org/users/history/version_1_57_0.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
