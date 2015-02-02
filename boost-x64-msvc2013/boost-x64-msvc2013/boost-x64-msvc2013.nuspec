@@ -19,7 +19,4 @@
     </dependencies>
     <releaseNotes>http://www.boost.org/users/history/version_1_57_0.html</releaseNotes>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
