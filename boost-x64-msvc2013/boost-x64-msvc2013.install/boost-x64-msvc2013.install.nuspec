@@ -4,7 +4,7 @@
   <metadata>
     <id>boost-x64-msvc2013.install</id>
     <title>Boost (MSCV 2013, 64-bit, Install)</title>
-    <version>1.57.0</version>
+    <version>1.57.0.1</version>
     <authors>Boost</authors>
     <owners>Kevin M. Godby</owners>
     <summary>Boost provides free peer-reviewed portable C++ source libraries.</summary>
@@ -16,7 +16,4 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>http://www.boost.org/users/history/version_1_57_0.html</releaseNotes>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
