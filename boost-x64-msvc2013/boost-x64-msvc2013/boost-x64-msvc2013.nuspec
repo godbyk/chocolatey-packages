@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>boost-x64-msvc2013</id>
-    <title>Boost (MSCV 2013, 64-bit)</title>
+    <title>Boost (MSVC 2013, 64-bit)</title>
     <version>1.57.0</version>
     <authors>Boost</authors>
     <owners>Kevin M. Godby</owners>
