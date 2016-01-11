@@ -9,7 +9,7 @@ $bits = 32
 $verDecimal = $boostVer -join "."
 $verUnderscore = $boostVer -join "_"
 
-$url = "http://superb-dca3.dl.sourceforge.net/project/boost/boost-binaries/$verDecimal/boost_$verUnderscore-msvc-$vc-$bits.$installerType"
+$url = "http://sourceforge.net/projects/boost/files/boost-binaries/$verDecimal/boost_$verUnderscore-msvc-$vc-$bits.$installerType"
 $silentArgs = '/VERYSILENT'
 #$checksum = 'c0dd6e80bb2ed40897e4cd437b4463b5917e17497c68b0285bb5cfd6e4dc8671'
 #$checksumType = 'sha256'
