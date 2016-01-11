@@ -3,10 +3,10 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>boost-x64-msvc2013.install</id>
-    <title>Boost (MSCV 2013, 64-bit, Install)</title>
-    <version>1.57.0.1</version>
+    <title>Boost (MSVC 2013, 64-bit, Install)</title>
+    <version>1.57.0.2</version>
     <authors>Boost</authors>
-    <owners>Kevin M. Godby</owners>
+    <owners>Kevin M. Godby, Ryan A. Pavlik</owners>
     <summary>Boost provides free peer-reviewed portable C++ source libraries.</summary>
     <description>Boost provides free peer-reviewed portable C++ source libraries.</description>
     <projectUrl>http://www.boost.org/</projectUrl>

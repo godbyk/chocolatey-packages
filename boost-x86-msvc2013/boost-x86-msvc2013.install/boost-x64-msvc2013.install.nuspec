@@ -4,7 +4,7 @@
   <metadata>
     <id>boost-x86-msvc2013.install</id>
     <title>Boost (MSVC 2013, 32-bit), Install</title>
-    <version>1.57.0.1</version>
+    <version>1.57.0.2</version>
     <authors>Boost</authors>
     <owners>Kevin M. Godby, Ryan A. Pavlik</owners>
     <summary>Boost provides free peer-reviewed portable C++ source libraries.</summary>
